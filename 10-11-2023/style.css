@@ -1,0 +1,80 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:98vh;
+    width:99vw;
+    background-image: url(./immagini/Natale.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(203, 4, 4);
+    font-family: Dancing Script;
+}
+
+.hero h1{
+    font-family: Dancing Script;
+    font-size: 70px;
+}
+
+.hero p{
+    font-size: 40px;
+    color:rgb(239, 239, 244)
+}
+
+.hero button{
+    border-radius: 10px;
+    background-color: #ffffff00;
+    border-radius: 30%, 38ch;
+    border-color: #c653ff;
+    color:rgb(0, 255, 255);
+    width: 30%;
+    height: 50px;
+    font-size: 30px;
+    font-family: Dancing Script;
+}
+
+
+.divDue {
+    background-color: blueviolet;
+    min-height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.gallery-title {
+    font-family: Dancing Script;
+    text-align: center;
+    color:aqua;
+    font-size: 34px;
+    padding-top: 30px;
+}
+
+.img-gallery {
+    border-radius: 15px;
+    border: 6px dotted #3366ff;
+}
+
+@media only-screen and (max-width:800px){
+    .hero {
+        background-image: none;
+    }
+     *{
+        color:#104a8e;
+        font-size: 10px;
+        text-align:center;
+    }
+}
