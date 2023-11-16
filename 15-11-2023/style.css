@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.recommended {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.robo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.robo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  background-color: #9ba4b4;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.robo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.robo h4,
+.robo p {
+  margin: 0;
+}
+
+.text {
+  flex: 1;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4caf98;
+  color: rgb(93, 140, 195);
+  border: none;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
