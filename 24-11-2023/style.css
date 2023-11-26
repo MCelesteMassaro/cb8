@@ -1,0 +1,368 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Reset del body */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+}
+
+/* Reset per link */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Stile per h1 */
+h1 {
+  font-size: 4rem;
+}
+
+/* Container generale */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-wrapper {
+  text-align: center;
+}
+
+.gift {
+  display: flex;
+}
+
+/* Stile del bottone */
+.button2 {
+  display: block;
+  background-color: #3598dc;
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  border-radius: 40px 40px 40px 40px;
+  align-items: center;
+}
+
+.button2::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.button2::after {
+  content: "";
+  margin-top: 8px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 20px 80px 20px 80px;
+  padding: 12px 22px 12px;
+  margin-top: 10px;
+  background-color: #3598dc;
+  color: white;
+  outline: 0;
+  text-decoration: none;
+}
+
+/* Responsive */
+.container nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > button {
+  margin: 0 1rem;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.menu > button:nth-child(5) {
+  margin-left: 6rem;
+}
+
+.menu > button:last-child {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 6px 22px;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu2 {
+  display: flex;
+  list-style-type: none;
+}
+
+#menu-nav {
+  display: none;
+}
+
+.button {
+  display: block;
+  background-color: #3598dc;
+  position: absolute;
+  height: 15px;
+  width: 100px;
+  border-radius: 20px 80px 20px 80px;
+}
+
+.button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+/* Inizio hero */
+.hero-wrapper,
+.box-wrapper {
+  width: 78%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text,
+.box-text {
+  width: 50%;
+}
+
+.hero-img,
+.box-img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.gift1 {
+  text-align: center;
+}
+
+.gift1 img {
+  margin: 0 auto;
+}
+
+.banner-wrapper {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #3598dc;
+}
+
+.banner-text p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* Media Query per dispositivi con larghezza massima di 700px */
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 90px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-nav ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  #menu-nav:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+  }
+
+  .hero-text,
+  .hero-img {
+    width: 100%;
+  }
+  .services-row {
+    flex-direction: column;
+  }
+}
+/* inizio hero 2 */
+.hero-wrapper2,
+.box-wrapper2 {
+  width: 78%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text2,
+.box-text2 {
+  width: 50%;
+}
+
+.hero2-img,
+.box-img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.gift1 {
+  text-align: center;
+}
+
+.gift1 img {
+  margin: 0 auto;
+}
+
+.banner-wrapper {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #3598dc;
+}
+
+.banner-text p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.button3 {
+  display: block;
+  background-color: #3598dc;
+  position: absolute;
+  height: 25px;
+  width: 100px;
+  border-radius: 40px;
+}
+
+.button3::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.button3::after {
+  content: "";
+  margin-top: 8px;
+}
+
+/* fine hero 2 */
+
+/* inizio card */
+
+.service-wrapper2 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+}
+
+.content-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  background-color: gray;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.buttonTwo {
+  background-color: #3598dc;
+  border-radius: 20%;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  gap: 50px;
+  background-color: #3598dc;
+}
+
+.footer-column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-hero-wrapper3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
