@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments App</title>
+  <link rel="stylesheet" href="./style.css"> <script src="./script.js"></script>
+</head>
+
+<body>
+  <!-- Sezione con logo e titolo -->
+  <header>
+    <img src="https://img.freepik.com/premium-vector/caduceus-symbol-made-using-bird-wings-poisonous-snakes-healthcare-conceptual-vector-illustration_570429-5842.jpg" alt="Logo" id="logo">
+    <h1>Appointments App</h1>
+  </header>
+
+  <!-- Pulsanti per attivare/disattivare la visibilità degli appuntamenti completati -->
+  <div id="button-container">
+    <button onclick="toggleCompleted()">Mostra solo i completati</button>
+    <button onclick="toggleAll()">Mostra tutti</button>
+  </div>
+
+  <!-- Sezione del contenuto principale composto da due parti: appuntamento in sospeso e appuntamenti completati -->
+  <section>
+    <!-- Part 1: Appuntamenti in attesa -->
+    <div id="appointments">
+      <h2>Appuntamenti in attesa</h2>
+      <!-- Elenco non ordinato per visualizzare gli appuntamenti in sospeso -->
+      <ul id="pendingAppointments"></ul>
+    </div>
+
+    <!-- Part 2: Appuntamenti già conclusi -->
+    <div id="completedAppointments" style="display: block;">
+      <h2>Appuntamenti già conclusi</h2>
+      <!-- Elenco non ordinato per visualizzare gli appuntamenti completati -->
+      <ul id="completedList"></ul>
+    </div>
+  </section>
+
+  
+  
+</body>
+
+</html>
+
+
+
+
+
+

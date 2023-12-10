@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e0e0e0; /* Colore di sfondo del corpo */
+  }
+
+  header {
+    background-color: #fffdfd;
+    color: #668B8B;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #009ACD;
+  }
+
+  #logo {
+    width: 60px; /* Larghezza del logo */
+    height: 60px; /* Altezza del logo */
+  }
+
+  h1 {
+    margin: 0; 
+    flex-grow: 1;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  #appointments {
+    width: 30%;
+    background-color: #96CDCD;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  #pendingAppointments,
+  #completedList {
+    list-style: none;
+    padding: 0;
+  }
+
+  #pendingAppointments li,
+  #completedList li {
+    padding: 5px;
+    border-bottom: 1px solid #009ACD; /* Stile bordo per entrambi gli elementi */
+  }
+
+  #completedAppointments {
+    width: 30%;
+    background-color: #9FB6CD;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  #button-container {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  button {
+    margin-right: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  button:hover {
+    background-color: #CAE1FF; /* Cambio colore del passaggio del mouse */
+    transform: scale(1.05); /* Trasforma l'elemento al passaggio del mouse */
+  }
